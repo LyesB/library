@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Library</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="icon.svg" alt="library icon" id="icon">
+            <button id="openForm" onclick="openForm()">Add A Book</button>
+        </div>
+        <div class="content">
+            
+        </div>
+        <div id="form-container">
+            <form action="" id="myForm">
+    
+                <div id="form-row">
+                    <label for="title">Book Title</label>
+                    <input type="text" name="title" id="titleInput">
+                </div>
+                
+                <div id="form-row">
+                    <label for="author">Book Author</label>
+                    <input type="text" name="author" id="authorInput">
+                </div> 
+                
+                <div id="form-row"> 
+                    <label for="pages">Number Of Pages</label>
+                    <input type="number" min="1" name="pages" id="pagesInput">
+                </div>
+    
+                <div id="checkbox">
+                    <input type="checkbox" name="status" id="statusInput">
+                    <label for="status">Read?</label>
+                </div>
+    
+                <div id="form-buttons">
+                    <button type="submit" id="addBook">Add Book</button>
+                    <button id="closeButton" onclick="closeForm()">Close</button>
+                </div>
+                           
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
